@@ -1,15 +1,20 @@
 public class MethodExample01 {
 
-    static void mymethod() {
-
-        System.out.println("I just got executed!");
-
+    public void fullThrottle() {
+        System.out.println("The car is going as it can!");
     }
 
-    public static void main(String[] args) {
-        
-        mymethod();
 
+    public void speed(int maxSpeed) {
+        System.out.println("Max speed is: " + maxSpeed);
+    }
+
+
+    public static void main(String[] args) {
+        MethodExample01 myCar = new MethodExample01();
+
+        myCar.fullThrottle();
+        myCar.speed(200);
     }
     
 }
